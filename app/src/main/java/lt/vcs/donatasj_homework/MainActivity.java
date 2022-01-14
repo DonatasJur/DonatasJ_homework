@@ -59,4 +59,10 @@ public class MainActivity extends AppCompatActivity {
         printStatus(":--------");
         printStatus(": onRestart");
     }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        printStatus(":--------");
+        printStatus(": onDestroy");
+    }
 }
