@@ -53,4 +53,10 @@ public class MainActivity extends AppCompatActivity {
         printStatus(":--------");
         printStatus(": onStop");
     }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        printStatus(":--------");
+        printStatus(": onRestart");
+    }
 }
