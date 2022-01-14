@@ -47,4 +47,10 @@ public class MainActivity extends AppCompatActivity {
         printStatus(":--------");
         printStatus(": OnPause");
     }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        printStatus(":--------");
+        printStatus(": onStop");
+    }
 }
