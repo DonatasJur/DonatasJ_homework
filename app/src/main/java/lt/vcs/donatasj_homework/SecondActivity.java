@@ -9,21 +9,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity {
 
-    Button button;
-    private static final String LOG_TAG = "log_second_activity";
+    Button myButton;
+    private static final String LOG_TAG = "2nd_activity";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setupUI();
         printStatus(":----------");
         printStatus(": onCreate");
-        setUI();
+
     }
 
-    private void setUI() {
+    private void setupUI() {
         setContentView(R.layout.activity_second);
-        button = findViewById(R.id.button2);
+        myButton = findViewById(R.id.buttonTwo);
         onButtonClick();
     }
 
@@ -33,9 +34,11 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void onButtonClick() {
-        button.setOnClickListener(new View.OnClickListener() {
+        myButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { finish();}
+            public void onClick(View v) {
+                finish();
+            }
         });
     }
 

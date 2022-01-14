@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
-    private final static String LOG_TAG = "log_main_activity";
+    Button myButton;
+    private final static String LOG_TAG = "1st_main_activity";
 
 
     @Override
@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         printStatus(":----------");
         printStatus(": onCreate");
-        setUI();
+        setupUI();
     }
 
-    private void setUI() {
+    private void setupUI() {
         setContentView(R.layout.activity_main);
-        button = findViewById(R.id.button);
+        myButton = findViewById(R.id.buttonOne);
         onButtonClick();
     }
 
@@ -34,10 +34,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onButtonClick() {
-        button.setOnClickListener(new View.OnClickListener() {
+        myButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {openSecondActivity();
-            }
+            public void onClick(View v) { openSecondActivity();}
         });
 
     }
