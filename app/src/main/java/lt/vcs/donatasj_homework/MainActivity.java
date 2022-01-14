@@ -12,11 +12,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        printStatus("--------");
-        printStatus("onCreate");
+        printStatus(":----------");
+        printStatus(": onCreate");
         setUP();
     }
-    private void setUP(){
+
+    private void setUP() {
         setContentView(R.layout.activity_main);
     }
 
@@ -29,15 +30,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        printStatus("--------");
-        printStatus("onStart");
+        printStatus(":--------");
+        printStatus(": onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        printStatus("--------");
-        printStatus("onResume");
+        printStatus(":--------");
+        printStatus(": onResume");
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        printStatus(":--------");
+        printStatus(": OnPause");
+    }
 }
