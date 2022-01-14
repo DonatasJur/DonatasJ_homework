@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/second_activity_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1st Activity"
+        android:text="Second Activity"
         android:textSize="40sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,15 +21,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="131dp"
         android:layout_height="72dp"
-        android:text="OPEN"
-        android:textSize="20dp"
+        android:text="CLOSE"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.494" />
+        app:layout_constraintTop_toBottomOf="@+id/second_activity_view"
+        app:layout_constraintVertical_bias="0.512" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

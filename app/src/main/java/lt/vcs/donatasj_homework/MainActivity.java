@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         printStatus(":----------");
         printStatus(": onCreate");
-        setUP();
+        setUI();
     }
 
-    private void setUP() {
+    private void setUI() {
         setContentView(R.layout.activity_main);
     }
 
@@ -47,18 +47,21 @@ public class MainActivity extends AppCompatActivity {
         printStatus(":--------");
         printStatus(": OnPause");
     }
+
     @Override
     protected void onStop() {
         super.onStop();
         printStatus(":--------");
         printStatus(": onStop");
     }
+
     @Override
     protected void onRestart() {
         super.onRestart();
         printStatus(":--------");
         printStatus(": onRestart");
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
