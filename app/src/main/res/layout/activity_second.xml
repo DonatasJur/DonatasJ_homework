@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/second_activity_view"
+        android:id="@+id/secondActivityView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Second Activity"
@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/second_activity_view"
+        app:layout_constraintTop_toBottomOf="@+id/secondActivityView"
         app:layout_constraintVertical_bias="0.512" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

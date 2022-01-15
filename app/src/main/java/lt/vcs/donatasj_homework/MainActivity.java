@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupUI() {
         setContentView(R.layout.activity_main);
-        myButton = findViewById(R.id.buttonOne);
+        myButton = findViewById(R.id.button);
         onButtonClick();
     }
 
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onButtonClick() {
-        myButton.setOnClickListener(new View.OnClickListener() {
+        myButton.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) { openSecondActivity();}
         });
@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openSecondActivity() {
-        Intent secondActivity = new Intent(this, SecondActivity.class);
+       Intent secondActivity = new Intent(this, SecondActivity.class);
+//        startActivity(new Intent(this, SecondActivity.class));
         startActivity(secondActivity);
     }
 
