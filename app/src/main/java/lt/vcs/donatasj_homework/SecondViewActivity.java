@@ -7,10 +7,10 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondViewActivity extends AppCompatActivity {
 
     Button myButton;
-    private static final String LOG_TAG = "2nd_activity";
+    private static final String LOG_TAG = "log_2nd_activity";
 
 
     @Override

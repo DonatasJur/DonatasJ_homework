@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     Button myButton;
-    private final static String LOG_TAG = "1st_main_activity";
+    private final static String LOG_TAG = "log_1st_main_activity";
 
 
     @Override
@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openSecondActivity() {
-       Intent secondActivity = new Intent(this, SecondActivity.class);
+       Intent i = new Intent(this, SecondViewActivity.class);
 //        startActivity(new Intent(this, SecondActivity.class));
-        startActivity(secondActivity);
+        startActivity(i);
     }
 
 
